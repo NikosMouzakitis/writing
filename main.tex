@@ -91,6 +91,21 @@ For EEG applications, they showed that pre-ictal networks exhibit higher recurre
 than post-ictal periods, with the $\tau$-recurrence rate ($RR_{\tau}$) proving particularly 
 effective for seizure detection.
 
+In their research, Pentari et al.\cite{pentari22} have applied CRQA to resting-state fMRI data 
+for examining the dynamic functional connectivity on patients with neuropsychiatric systemic 
+lupus erythematosus (NPSLE). Results contain the fact that CRQA metrics, such as determinism,
+appear more sensitive than conventional static functional connectivity methods in order to
+identify aberrant connectivity patterns that correlated with visuomotor performance. 
+The study focused on 16 frontoparietal regions and found that CRQA could detect 
+both increased and decreased connectivity in NPSLE patients compared against the healthy controls. 
+Building on these findings, Pentari et al.\cite{pentari23} subsequently expanded 
+the investigation to whole brain network analysis in a larger cohort. 
+In this study they demonstrate the capability of CRQA to integrate multiple recurrence metrics 
+for revealing both hyperconnectivity in parietal regions (angular gyrus and superior parietal lobule) 
+and hypoconnectivity in medial temporal structures (hippocampus and amygdala). 
+Notably, the dynamic connectivity measures showed stronger associations with cognitive 
+performance than structural measures, particularly for verbal episodic memory. 
+
 \begin{table}[h]
 \centering
 \caption{Comparison among the retrieved studies using recurrence analysis}
@@ -107,12 +122,14 @@ effective for seizure detection.
 6 & Pitsik E. (2025) & EEG & RQA & aging \\
 7 & Guglielmo et al. (2022) & EEG & RQA & cognitive tasks \\
 8 & Lopes et al. (2020) & sEEG, MEG & RQA & epilepsy \\
+9 & Pentari et al. (2022) & fMRI & RQA, CRQA &  \\
+10 & Pentari et al. (2023) & fMRI & CRQA & NPSLE  \\
 
 \bottomrule
 \end{tabular}
 \end{table}
 
-
+\newpage
 \bibliographystyle{plain}
 \bibliography{references}
 

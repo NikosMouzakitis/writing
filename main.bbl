@@ -24,5 +24,10 @@ Guglielmo, G., Wiltshire, T. J., \& Louwerse, M. (2022). Training machine learni
 
 \bibitem{lopes}
 Lopes, M. A., Zhang, J., Krzeminski, D., Hamandi, K., Chen, Q., Livi, L., \& Masuda, N. (2020). Recurrence quantification analysis of dynamic brain networks. \textit{European Journal of Neuroscience}, 00, 1-20. https://doi.org/10.1111/ejn.14960
+\bibitem{pentari22}
+Pentari, A., Tzagkarakis, G., Tsakalides, P., Simos, P., Bertstas, G., Kavroulakis, E., Marias, K., Simos, N. J., \& Papadaki, E. (2022). Changes in resting-state functional connectivity in neuropsychiatric lupus: A dynamic approach based on recurrence quantification analysis. \textit{Biomedical Signal Processing and Control, 72}, 103285. https://doi.org/10.1016/j.bspc.2021.103285
+
+\bibitem{pentari23}
+Pentari, A., Simos, N., Tzagarakis, G., Kagialis, A., Bertsias, G., Kavroulakis, E., Gratsia, E., Sidiropoulos, P., Boumpas, D. T., \& Papadaki, E. (2023). Altered hippocampal connectivity dynamics predicts memory performance in neuropsychiatric lupus: A resting-state fMRI study using cross-recurrence quantification analysis. \textit{Lupus Science \& Medicine}, \textit{10}(1), e000920. https://doi.org/10.1136/lupus-2023-000920
 
 \end{thebibliography}
