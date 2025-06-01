@@ -1,0 +1,28 @@
+\begin{thebibliography}{1} 
+
+\bibitem{frolov}
+\textit{Frolov, N., Maksimenko, V. and Hramov, A. (2020), Revealing a multiplex brain network through the analysis of recurrences} Chaos: An Interdisciplinary Journal of Nonlinear Science 30(12), 121108.
+
+\bibitem{kang}
+ \textit{Recurrence quantification analysis of periodic dynamics in the default mode network in first-episode drug-naïve schizophrenia.} Psychiatry Research: Neuroimaging, 329, 111583.
+
+\bibitem{rezaei}
+\textit{Recurrence quantification analysis of rs-fMRI data: A method to detect subtle changes in the TgF344-AD rat model.} Computer Methods and Programs in Biomedicine, 257, 108378.
+
+\bibitem{lameu2018}
+Lameu, E. L., Yanchuk, S., Macau, E. E. N., Borges, F. S., Iarosz, K. C., Caldas, I. L., Protachevicz, P. R., Borges, R. R., Viana, R. L., Szezech, J. D., Batista, A. M., \& Kurths, J. (2018). Recurrence quantification analysis for the identification of burst phase synchronisation. \textit{Chaos: An Interdisciplinary Journal of Nonlinear Science}, \textit{28}(8), 085701. https://doi.org/10.1063/1.5024324
+
+\bibitem{Lombardi2014} 
+Lombardi, A., Guccione, P., \& Mascolo, L. (2014). Analysis of fMRI data using the complex systems approach. In \textit{20th IMEKO TC4 International Symposium and 18th International Workshop on ADC Modelling and Testing} (pp. 293-298). Benevento, Italy.
+
+\bibitem{pitsik}
+Pitsik, E. (2025). Recurrence quantification analysis and theta-band functional networks detect age-related changes in brain sensorimotor system: VR-based approach. \textit{The European Physical Journal Special Topics}. https://doi.org/10.1140/epjs/s11734-025-01509-y
+
+
+\bibitem{guglielmo}
+Guglielmo, G., Wiltshire, T. J., \& Louwerse, M. (2022). Training machine learning models to detect group differences in neurophysiological data using recurrence quantification analysis based features. \textit{ICAART 2022 - 14th International Conference on Agents and Artificial Intelligence}, 430-434.
+
+\bibitem{lopes}
+Lopes, M. A., Zhang, J., Krzeminski, D., Hamandi, K., Chen, Q., Livi, L., \& Masuda, N. (2020). Recurrence quantification analysis of dynamic brain networks. \textit{European Journal of Neuroscience}, 00, 1-20. https://doi.org/10.1111/ejn.14960
+
+\end{thebibliography}
