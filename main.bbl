@@ -10,24 +10,40 @@
 \textit{Recurrence quantification analysis of rs-fMRI data: A method to detect subtle changes in the TgF344-AD rat model.} Computer Methods and Programs in Biomedicine, 257, 108378.
 
 \bibitem{lameu2018}
-Lameu, E. L., Yanchuk, S., Macau, E. E. N., Borges, F. S., Iarosz, K. C., Caldas, I. L., Protachevicz, P. R., Borges, R. R., Viana, R. L., Szezech, J. D., Batista, A. M., \& Kurths, J. (2018). Recurrence quantification analysis for the identification of burst phase synchronisation. \textit{Chaos: An Interdisciplinary Journal of Nonlinear Science}, \textit{28}(8), 085701. https://doi.org/10.1063/1.5024324
+Lameu, E. L., Yanchuk, S., Macau, E. E. N., Borges, F. S., Iarosz, K. C., Caldas, I. L., Protachevicz, P. R., Borges, R. R., Viana, R. L., Szezech, J. D., Batista, A. M. and Kurths, J. (2018). Recurrence quantification analysis for the identification of burst phase synchronisation. \textit{Chaos: An Interdisciplinary Journal of Nonlinear Science}, \textit{28}(8), 085701. https://doi.org/10.1063/1.5024324
 
 \bibitem{Lombardi2014} 
-Lombardi, A., Guccione, P., \& Mascolo, L. (2014). Analysis of fMRI data using the complex systems approach. In \textit{20th IMEKO TC4 International Symposium and 18th International Workshop on ADC Modelling and Testing} (pp. 293-298). Benevento, Italy.
+Lombardi, A., Guccione, P. and Mascolo, L. (2014). Analysis of fMRI data using the complex systems approach. In \textit{20th IMEKO TC4 International Symposium and 18th International Workshop on ADC Modelling and Testing} (pp. 293-298). Benevento, Italy.
 
 \bibitem{pitsik}
 Pitsik, E. (2025). Recurrence quantification analysis and theta-band functional networks detect age-related changes in brain sensorimotor system: VR-based approach. \textit{The European Physical Journal Special Topics}. https://doi.org/10.1140/epjs/s11734-025-01509-y
 
 
 \bibitem{guglielmo}
-Guglielmo, G., Wiltshire, T. J., \& Louwerse, M. (2022). Training machine learning models to detect group differences in neurophysiological data using recurrence quantification analysis based features. \textit{ICAART 2022 - 14th International Conference on Agents and Artificial Intelligence}, 430-434.
+Guglielmo, G., Wiltshire, T. J. and Louwerse, M. (2022). Training machine learning models to detect group differences in neurophysiological data using recurrence quantification analysis based features. \textit{ICAART 2022 - 14th International Conference on Agents and Artificial Intelligence}, 430-434.
 
 \bibitem{lopes}
-Lopes, M. A., Zhang, J., Krzeminski, D., Hamandi, K., Chen, Q., Livi, L., \& Masuda, N. (2020). Recurrence quantification analysis of dynamic brain networks. \textit{European Journal of Neuroscience}, 00, 1-20. https://doi.org/10.1111/ejn.14960
+Lopes, M. A., Zhang, J., Krzeminski, D., Hamandi, K., Chen, Q., Livi, L. and Masuda, N. (2020). Recurrence quantification analysis of dynamic brain networks. \textit{European Journal of Neuroscience}, 00, 1-20. https://doi.org/10.1111/ejn.14960
 \bibitem{pentari22}
-Pentari, A., Tzagkarakis, G., Tsakalides, P., Simos, P., Bertstas, G., Kavroulakis, E., Marias, K., Simos, N. J., \& Papadaki, E. (2022). Changes in resting-state functional connectivity in neuropsychiatric lupus: A dynamic approach based on recurrence quantification analysis. \textit{Biomedical Signal Processing and Control, 72}, 103285. https://doi.org/10.1016/j.bspc.2021.103285
+Pentari, A., Tzagkarakis, G., Tsakalides, P., Simos, P., Bertstas, G., Kavroulakis, E., Marias, K., Simos, N. J. and Papadaki, E. (2022). Changes in resting-state functional connectivity in neuropsychiatric lupus: A dynamic approach based on recurrence quantification analysis. \textit{Biomedical Signal Processing and Control, 72}, 103285. https://doi.org/10.1016/j.bspc.2021.103285
 
 \bibitem{pentari23}
-Pentari, A., Simos, N., Tzagarakis, G., Kagialis, A., Bertsias, G., Kavroulakis, E., Gratsia, E., Sidiropoulos, P., Boumpas, D. T., \& Papadaki, E. (2023). Altered hippocampal connectivity dynamics predicts memory performance in neuropsychiatric lupus: A resting-state fMRI study using cross-recurrence quantification analysis. \textit{Lupus Science \& Medicine}, \textit{10}(1), e000920. https://doi.org/10.1136/lupus-2023-000920
+Pentari, A., Simos, N., Tzagarakis, G., Kagialis, A., Bertsias, G., Kavroulakis, E., Gratsia, E., Sidiropoulos, P., Boumpas, D. T. and Papadaki, E. (2023). Altered hippocampal connectivity dynamics predicts memory performance in neuropsychiatric lupus: A resting-state fMRI study using cross-recurrence quantification analysis. \textit{Lupus Science \& Medicine}, \textit{10}(1), e000920. https://doi.org/10.1136/lupus-2023-000920
+
+\bibitem{gruszczynska2019}
+Gruszczyńska, I., Mosdorf, R., Sobaniec, P., Żochowska-Sobaniec, M. and  Borowska, M. (2019). Epilepsy identification based on EEG signal using RQA method. \emph{Advances in Medical Sciences}, 64(1), 58-64. https://doi.org/10.1016/j.advms.2018.08.003
+
+
+\bibitem{mo}
+Mo, J., Zhang, J., Hu, W., Wang, X., Zhao, B., Zhang, K. and Zhang, C. (2022). Neural underpinnings of default mode network on empathy revealed by intracranial stereoelectroencephalography. \textit{Psychiatry and Clinical Neurosciences, 76}(12), 659-666. https://doi.org/10.1111/pcn.13470
+
+\bibitem{palanisamy2024}
+Vanithamani Palanisamy, A.~Ranichitra, and Radhamani Ellapparaj,
+A differential biomarker based on recurrence quantification analysis of {EEG} signal and genetic algorithm for epilepsy diagnosis.
+\textit{ Journal of Artificial Intelligence and System Modelling}, 2(2):74--85, 2024.
+10.22034/jaism.2024.450400.1046
+
+\bibitem{ngamga2016}
+Ngamga, E. J., Bialonski, S., Marwan, N., Kurths, J., Geier, C., \& Lehnertz, K. (2016). Evaluation of selected recurrence measures in discriminating pre-ictal and inter-ictal periods from epileptic EEG data. \textit{Physics Letters A}, \textit{380}(16), 1419–1425. https://doi.org/10.1016/j.physleta.2016.02.024
 
 \end{thebibliography}
