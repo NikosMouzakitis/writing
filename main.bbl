@@ -46,4 +46,13 @@ A differential biomarker based on recurrence quantification analysis of {EEG} si
 \bibitem{ngamga2016}
 Ngamga, E. J., Bialonski, S., Marwan, N., Kurths, J., Geier, C., \& Lehnertz, K. (2016). Evaluation of selected recurrence measures in discriminating pre-ictal and inter-ictal periods from epileptic EEG data. \textit{Physics Letters A}, \textit{380}(16), 1419–1425. https://doi.org/10.1016/j.physleta.2016.02.024
 
+\bibitem{fan2019detecting}
+Fan, M. and  Chou, C.-A. (2019). Detecting abnormal pattern of epileptic seizures via temporal synchronization of EEG signals. \textit{IEEE Transactions on Biomedical Engineering}, 66(3), 601-608. https://doi.org/10.1109/TBME.2018.2850959
+
+\bibitem{nunez2020characterization}
+P.~Núñez, J.~Poza, C.~Gómez, V.~Barroso-García, A.~Maturana-Candelas, M.~A. Tola-Arribas, M.~Cano, and R.~Hornero,
+Characterization of the dynamic behavior of neural activity in Alzheimer's disease: exploring the non-stationarity and recurrence structure of EEG resting-state activity,
+\emph{Journal of Neural Engineering}, vol.~17, no.~1, p. 016071, 2020, doi: https://doi.org/10.1088/1741-2552/ab71e9.
+
+
 \end{thebibliography}
