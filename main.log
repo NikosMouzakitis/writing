@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  4 JUN 2025 02:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  7 JUN 2025 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -81,22 +81,30 @@ LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 
-Overfull \hbox (5.83167pt too wide) in paragraph at lines 65--79
-[]\OT1/cmr/m/n/10 Researchers in [[]], have ap-plied RQA on resting-state fMRI 
-data from TgF344-
+Overfull \hbox (10.61171pt too wide) in paragraph at lines 14--25
+\OT1/cmr/m/n/10 dices can ef-fec-tively cap-ture both within-frequency (in-tral
+ayer) and cross-frequency
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (5.83167pt too wide) in paragraph at lines 79--94
+[]\OT1/cmr/m/n/10 Researchers in [[]], have ap-plied RQA on resting-state fMRI 
+data from TgF344-
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 107.
+(Font)              <7> on input line 104.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 107.
- [2] [3]
-Overfull \hbox (110.57025pt too wide) in paragraph at lines 197--221
+(Font)              <5> on input line 104.
+[2] [3]
+Overfull \hbox (111.54247pt too wide) in paragraph at lines 238--264
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4] (./main.bbl [5]
 Underfull \hbox (badness 2376) in paragraph at lines 41--45
@@ -116,7 +124,7 @@ Underfull \hbox (badness 1009) in paragraph at lines 41--45
 1/cmr/m/n/10 , 2(2):74--85, 2024.
  []
 
-
+[6]
 Underfull \hbox (badness 5817) in paragraph at lines 50--51
 []\OT1/cmr/m/n/10 Fan, M. and Chou, C.-A. (2019). De-tect-ing ab-nor-mal pat-te
 rn
@@ -134,24 +142,42 @@ Underfull \hbox (badness 1661) in paragraph at lines 50--51
 i-neer-ing\OT1/cmr/m/n/10 , 66(3), 601-608.
  []
 
-) [6] (./main.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[]\OT1/cmr/m/n/10 Rangaprakash, D. (2014). Con-nec-tiv-ity anal-y-sis of mul-ti
+-chan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 nel EEG sig-nals us-ing re-cur-rence based phase syn-chro-niza-
+
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 tion tech-nique. \OT1/cmr/m/it/10 Com-put-ers in Bi-ol-ogy and 
+Medicine, 46\OT1/cmr/m/n/10 , 11-21.
+ []
+
+) [7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 534 strings out of 481239
- 8362 string characters out of 5920378
- 242956 words of memory out of 5000000
- 15867 multiletter control sequences out of 15000+600000
+ 536 strings out of 481239
+ 8399 string characters out of 5920378
+ 244956 words of memory out of 5000000
+ 15869 multiletter control sequences out of 15000+600000
  533289 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 25i,8n,20p,483b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,8n,20p,483b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
 i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (6 pages, 88890 bytes).
+Output written on main.pdf (7 pages, 91336 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

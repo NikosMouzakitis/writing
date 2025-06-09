@@ -54,5 +54,15 @@ P.~Núñez, J.~Poza, C.~Gómez, V.~Barroso-García, A.~Maturana-Candelas, M.~A. 
 Characterization of the dynamic behavior of neural activity in Alzheimer's disease: exploring the non-stationarity and recurrence structure of EEG resting-state activity,
 \emph{Journal of Neural Engineering}, vol.~17, no.~1, p. 016071, 2020, doi: https://doi.org/10.1088/1741-2552/ab71e9.
 
+\bibitem{yang2019dynamical}
+Yang, C., Luan, G., Liu, Z. and Wang, Q. (2019). 
+Dynamical analysis of epileptic characteristics based on recurrence quantification of {SEEG} recordings. 
+\textit{Physica A: Statistical Mechanics and its Applications}, \textit{523}, 507--515. 
+https://doi.org/10.1016/j.physa.2019.02.017
+
+
+\bibitem{rangaprakash2014}
+Rangaprakash, D. (2014). Connectivity analysis of multichannel EEG signals using recurrence based phase synchronization technique. \textit{Computers in Biology and Medicine, 46}, 11-21. https://doi.org/10.1016/j.compbiomed.2013.10.025
+
 
 \end{thebibliography}
