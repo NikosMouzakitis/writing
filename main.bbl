@@ -65,4 +65,35 @@ https://doi.org/10.1016/j.physa.2019.02.017
 Rangaprakash, D. (2014). Connectivity analysis of multichannel EEG signals using recurrence based phase synchronization technique. \textit{Computers in Biology and Medicine, 46}, 11-21. https://doi.org/10.1016/j.compbiomed.2013.10.025
 
 
+
+\bibitem{trulla1996}
+Trulla, L. L., Giuliani, A., Zbilut, J. P., and Webber, C. L.,
+``Recurrence Quantification Analysis of the Logistic Equation with Transients,''
+\emph{Physics Letters A}, vol. 223, no. 4-5, pp. 255--260, 1996.
+\verb|doi: 10.1016/S0375-9601(96)00741-4|
+
+\bibitem{webber2005}
+Webber, C. L. and Zbilut, J. P.,
+``Recurrence Quantification Analysis of Nonlinear Dynamical Systems,''
+in \emph{Tutorials in Contemporary Nonlinear Methods for the Behavioral Sciences},
+pp. 26--94, 2005.
+
+\bibitem{thomasson2002}
+Thomasson, N., Hoeppner, T. J., Webber, C. L., and Zbilut, J. P.,
+``Application of Recurrence Quantification Analysis to EEG Signals,''
+\emph{International Journal of Computer Research}, 2002.
+
+\bibitem{marwan2013}
+Marwan, N., Schinkel, S., and Kurths, J.,
+``Recurrence Plots 25 Years Later -- Gaining Confidence in Dynamical Transitions,''
+\emph{EPL (Europhysics Letters)}, vol. 101, no. 2, p. 20007, 2013.
+\verb|doi: 10.1209/0295-5075/101/20007|
+
+\bibitem{heunis2018}
+Heunis, T., Aldrich, C., Peters, J. M., Jeste, S. S., Sahin, M., Scheffer, C., and de Vries, P. J.,
+``Recurrence quantification analysis of resting state EEG signals in autism spectrum disorder -- a systematic methodological exploration of technical and demographic confounders in the search for biomarkers,''
+\emph{BMC Medicine}, vol. 16, no. 1, p. 101, 2018.
+
+
+
 \end{thebibliography}

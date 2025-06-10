@@ -9,6 +9,19 @@
 \begin{document}
 
 	\section*{Bibliographical references}
+			%intro and foundational works to have as introduction.test papers.
+			Recurrence Quantification Analysis (RQA) and Cross-Recurrence Quantification Analysis (CRQA) are
+			nonlinear methods for the analysis of nonstationary time series; such as EEG signals. 
+			The offer quantification of the recurring patterns in phase space trajectories \cite{trulla1996, webber2005}. 
+			Introduced by Trulla et al.\cite{trulla1996} and expanded by Webber and Zbilut\cite{webber2005}, RQA measures metrics 
+			like recurrence rate, determinism, and laminarity to capture dynamic system behavior. 
+			Thomasson et al.\cite{thomasson2002} demonstrated RQA’s applicability to EEG, highlighting its robustness to noise
+			and nonstationarity. Marwan et al.\cite{marwan2013} further advanced recurrence plot techniques,
+			emphasizing their utility in detecting dynamic transitions in neuroimaging. 
+			These foundational works underpin the application of RQA and CRQA to EEG studies in epilepsy, 
+			cognitive disorders, and beyond, as explored in this review.
+
+	
 
 			%ok, eeg
 			Frolov et al.\cite{frolov} (2020) proposed an approach to analyze frequency based multiplex brain networks
@@ -226,8 +239,12 @@
 			(\textit{recurrence rate, laminarity inspired}(custom feature)\textit{, and average structure size}) complement 
 			traditional order parameters by revealing localized synchronization patterns, 
 			such as the formation and growth of synchronized clusters.
-
-
+			
+			%ok, ASD
+			Heunis and co-authors\cite{heunis2018} have utilized resting state EEG and RQA in order to
+			distinguish individuals of ages 0-18 of two categories; ASD(autism spectrum disorder) and typically developing.
+			They have extracted RQA features and tested various linear and nonlinear classifiers achieving 92.9\% classification
+			accuracy with nonlinear SVM classifier.
 
 
 
@@ -258,6 +275,7 @@
 		16 & Nunez et al. (2020) & EEG & RQA & AD \\
 		17 & Yang et al. (2019) & sEEG & RQA,CRQA & epilepsy \\
 		18 & Rangaprakash (2014) & EEG & CPR(CRQA-based) & epilepsy \\
+		19 & Heunis et al. (2018) & rsEEG & RQA & autism spectrum disorder \\
 
 		\bottomrule
 		\end{tabular}
