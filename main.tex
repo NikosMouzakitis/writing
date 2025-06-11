@@ -13,7 +13,8 @@
 			Recurrence Quantification Analysis (RQA) and Cross-Recurrence Quantification Analysis (CRQA) are
 			nonlinear methods for the analysis of nonstationary time series; such as EEG signals. 
 			The offer quantification of the recurring patterns in phase space trajectories \cite{trulla1996, webber2005}. 
-			Introduced by Trulla et al.\cite{trulla1996} and expanded by Webber and Zbilut\cite{webber2005}, RQA measures metrics 
+			Introduced by Trulla et al.\cite{trulla1996} (directly built on quantifying recurrence plots\cite{eckmann1987}) 
+			and expanded by Webber and Zbilut\cite{webber2005}, RQA measures metrics 
 			like recurrence rate, determinism, and laminarity to capture dynamic system behavior. 
 			Thomasson et al.\cite{thomasson2002} in their work, demonstrated RQA’s applicability to EEG, highlighting its robustness to noise
 			and nonstationarity. Marwan et al.\cite{marwan2013} further advanced recurrence plot techniques,
@@ -35,30 +36,6 @@
 			patterns during prolonged cognitive tasks. In addition the dataset
 			used in this research are openly available in a Figshare repository.
 
-			%schizophrenia, fmri, ok
-			Lombardi et al.\cite{Lombardi2014} have investigated the 
-			nonlinear properties in fMRI BOLD signals 
-			during a working memory task in 
-			schizophrenic patients and healthy controls. 
-			They have attempted by using RQA, to analyze recurrence plots 
-			for quantifying determinism, trapping time, 
-			and maximal vertical line length 
-			in functionally relevant brain clusters. 
-			Outcome revealed differences in 
-			the dynamics between the two groups, 
-			and more specific in working memory and DMN areas. 
-			While their work have focused on fMRI, the methodology can be adapted also into
-			EEG signals, which can offer a higher resolution for capturing rapid neural dynamics.
-
-			%ok. schizophrenia, fMRI
-			Kang et al. (2023)\cite{kang}, in their study explore the dynamics and functional connectivity of the 
-			Default Mode Network (DMN) in schizophrenia, applying RQA-CRQA on resting-state fMRI data. 
-			Findings include decreased \textit{determinism} between specific DMN regions 
-			(vMPFC-posterios cingulate and vMPFC-precuneus) in first-episode schizophrenia patients, 
-			as a signal of disturbed predictability of functional interactions. 
-			Moreover, their results achieve to correctly classify using SVM(support vector machine)
-			schizophrenia patients from healthy controls with 77\% classification accuracy.
-
 			%ok.   eeg,Alzheimer
 			Núñez et al. \cite{nunez2020characterization} in their work, have analyzed
 			resting-state EEG recordings from subjects with mild cognitive impairment(MCI), 
@@ -76,7 +53,7 @@
 			Therefore, recurrence based dynamics show a capability as potential 
 			biomarkers for monitoring and detecting early Alzheimer's disease and its progression.
 
-			%epilepsy-ok
+			%epilepsy-ok eeg
 			Fan and Chou \cite{fan2019detecting} have also proposed 
 			an approach for real-time epileptic seizure detection
 			using as a method the analysis of temporal synchronization 
@@ -87,23 +64,11 @@
 			(6 seconds) for detecting seizure on the CHB-MIT dataset, 
 			performing better than other RQA measures.  
 
-			% Alzheimer, fmri, ok
-			Researchers in \cite{rezaei},
-			have applied RQA on resting-state fMRI data from 
-			TgF344-AD rats(a transgenic rat model which will eventually develop Alzheimer’s disease)
-			and their healthy-control counterparts wild-type rats(WT),
-			in order to detect early stage biomarkers for the disease.
-			By analyzing Default Mode-Like Network (DMLN) 
-			using RQA metrics(\textit{entropy, recurrence rate, determinism 
-			and average diagonal line length}) 
-			changes have been detected in regions of 
-			the basal forebrain, hippocampal fields (CA1, CA3), and visual 
-			cortices (V1, V2). Also on the study's findings include reduced predictability in 
-			WT rats with aging, while AD rats exhibited less decline
-			in predictability, suggesting some unknown yet countereacting mechanisms. 
-			This study highlights RQA's sensitivity for nonlinear dynamics 
-			in preclinical AD and the code used is also publicly available.
-
+			%ok, EEG, RQA, ASD
+			Heunis and co-authors\cite{heunis2018} have utilized resting state EEG and RQA in order to
+			distinguish individuals of ages 0-18 of two categories; ASD(autism spectrum disorder) and typically developing.
+			They have extracted RQA features and tested various linear and nonlinear classifiers achieving 92.9\% classification
+			accuracy with nonlinear SVM classifier.
 
 			% EEG, aging aisthitiriako-kinitiko systima. ok.
 			Author in \cite{pitsik}(2025), investigated changes related to aging in 
@@ -135,7 +100,7 @@
 			showing the potential that RQA holds for 
 			generalizing on nonlinear dynamics.
 			
-			%% epilepsy, CRQA half-ok
+			%% epilepsy, CRQA half-ok sEEG
 			Yang and co-authors \cite{yang2019dynamical}, employed stereo-electroencephalography (sEEG) 
 			recordings from 10 patients with refractory focal epilepsy to analyze dynamical differences 
 			among discreet epileptic states (inter-ictal, pre-ictal, and ictal) and regions. 
@@ -173,6 +138,93 @@
 			linear methods on distinguishing seizure and pre-seizure states, 
 			identifying epileptic foci, and differentiating alongside eyes-open and eyes-closed conditions. 
 
+			%eeg-epilepsy
+			Recent studies have demonstrated the effectiveness of RQA in 
+			analyzing EEG signals for epilepsy detection. 
+			Gruszczyńska et al.\cite{gruszczynska2019} have applied RQA
+			in order to distinguish epileptic from healthy patients using EEG recordings 
+			from frontal and temporal lobe electrodes (Fp1, Fp2, T3, T4). 
+			In their findings they have showed that the epileptic signals present more periodic
+			dynamics in comparison to healthy controls, by as evidenced by higher values of 
+			RQA parameters such as determinism,
+			laminarity, and longest diagonal line. The study combined RQA with
+			Principal Component Analysis for dimensionality reduction and visualization, achieving 86.8\% 
+			classification accuracy with SVM. This work is particularly relevant as it demonstrates RQA's capability
+			to identify pathological patterns in resting-state EEG without requiring seizure events during recording.
+
+			%sEEG
+			Another study utilizing advanced nonlinear analysis techniques for neural correlation investigation to
+			cognitive functions \cite{mo} used \textit{stereoelectroencephalography (sEEG)} combined alongside RQA 
+			for the examination of the relationship of the DMN and empathy. 
+			Correlations have been detected relating specific RQA metrics 
+			(mean diagonal line length, entropy of diagonal line lengths, trapping time) 
+			and empathy scores, particularly within DMN subsystems. 
+
+			%epilepsy EEG
+			Regarding epilepsy diagnosis, authors in \cite{palanisamy2024} proposed a new framework 
+			utilizing the combintation of RQA with genetic algorithms and Bayesian classifiers for 
+			identifying corresponding biomarkers for seizure detection. 
+			They utilized five distance norms (e.g., Euclidean, Mahalanobis) and multiple thresholds 
+			for extracting recurrence features from EEG signals, achieving 100\% classification accuracy. 
+			More specific, the \textit{transitivity} feature has shown capability of a highly discriminative biomarker, 
+			performing better compared to traditional linear methods. 
+
+			%epilepsy EEG
+			Ngamga et al.\cite{ngamga2016} studied the performance achieved of RQA and Recurrence Network (RN) measures in identifying 
+			pre-seizure states from multi-day, multi-channel intracranial EEG (iEEG) 
+			recordings of epilepsy patients. 
+			Results highlighted the correlation among RQA measures (determinism, laminarity, and mean recurrence time) in 
+			detecting seizure precursors, while RN measures (average shortest path length and network transitivity) provided 
+			complementary but not so consistent insights than using the application of RQA measures alone.
+
+
+
+
+%%%		fmri
+
+			% Alzheimer, fmri, ok
+			Researchers in \cite{rezaei},
+			have applied RQA on resting-state fMRI data from 
+			TgF344-AD rats(a transgenic rat model which will eventually develop Alzheimer’s disease)
+			and their healthy-control counterparts wild-type rats(WT),
+			in order to detect early stage biomarkers for the disease.
+			By analyzing Default Mode-Like Network (DMLN) 
+			using RQA metrics(\textit{entropy, recurrence rate, determinism 
+			and average diagonal line length}) 
+			changes have been detected in regions of 
+			the basal forebrain, hippocampal fields (CA1, CA3), and visual 
+			cortices (V1, V2). Also on the study's findings include reduced predictability in 
+			WT rats with aging, while AD rats exhibited less decline
+			in predictability, suggesting some unknown yet countereacting mechanisms. 
+			This study highlights RQA's sensitivity for nonlinear dynamics 
+			in preclinical AD and the code used is also publicly available.
+
+
+			%schizophrenia, fmri, ok
+			Lombardi et al.\cite{Lombardi2014} have investigated the 
+			nonlinear properties in fMRI BOLD signals 
+			during a working memory task in 
+			schizophrenic patients and healthy controls. 
+			They have attempted by using RQA, to analyze recurrence plots 
+			for quantifying determinism, trapping time, 
+			and maximal vertical line length 
+			in functionally relevant brain clusters. 
+			Outcome revealed differences in 
+			the dynamics between the two groups, 
+			and more specific in working memory and DMN areas. 
+			While their work have focused on fMRI, the methodology can be adapted also into
+			EEG signals, which can offer a higher resolution for capturing rapid neural dynamics.
+
+			%ok. schizophrenia, fMRI
+			Kang et al. (2023)\cite{kang}, in their study explore the dynamics and functional connectivity of the 
+			Default Mode Network (DMN) in schizophrenia, applying RQA-CRQA on resting-state fMRI data. 
+			Findings include decreased \textit{determinism} between specific DMN regions 
+			(vMPFC-posterios cingulate and vMPFC-precuneus) in first-episode schizophrenia patients, 
+			as a signal of disturbed predictability of functional interactions. 
+			Moreover, their results achieve to correctly classify using SVM(support vector machine)
+			schizophrenia patients from healthy controls with 77\% classification accuracy.
+
+
 			%npsle
 			In their research, Pentari et al.\cite{pentari22} have applied CRQA to resting-state fMRI data 
 			for examining the dynamic functional connectivity on patients with neuropsychiatric systemic 
@@ -189,44 +241,6 @@
 			Notably, the dynamic connectivity measures showed stronger associations with cognitive 
 			performance than structural measures, particularly for verbal episodic memory. 
 
-			%eeg-epilepsy
-			Recent studies have demonstrated the effectiveness of RQA in 
-			analyzing EEG signals for epilepsy detection. 
-			Gruszczyńska et al.\cite{gruszczynska2019} have applied RQA
-			in order to distinguish epileptic from healthy patients using EEG recordings 
-			from frontal and temporal lobe electrodes (Fp1, Fp2, T3, T4). 
-			In their findings they have showed that the epileptic signals present more periodic
-			dynamics in comparison to healthy controls, by as evidenced by higher values of 
-			RQA parameters such as determinism,
-			laminarity, and longest diagonal line. The study combined RQA with
-			Principal Component Analysis for dimensionality reduction and visualization, achieving 86.8\% 
-			classification accuracy with SVM. This work is particularly relevant as it demonstrates RQA's capability
-			to identify pathological patterns in resting-state EEG without requiring seizure events during recording.
-
-			Another study utilizing advanced nonlinear analysis techniques for neural correlation investigation to
-			cognitive functions \cite{mo} used \textit{stereoelectroencephalography (sEEG)} combined alongside RQA 
-			for the examination of the relationship of the DMN and empathy. 
-			Correlations have been detected relating specific RQA metrics 
-			(mean diagonal line length, entropy of diagonal line lengths, trapping time) 
-			and empathy scores, particularly within DMN subsystems. 
-
-			%epilepsy
-			Regarding epilepsy diagnosis, authors in \cite{palanisamy2024} proposed a new framework 
-			utilizing the combintation of RQA with genetic algorithms and Bayesian classifiers for 
-			identifying corresponding biomarkers for seizure detection. 
-			They utilized five distance norms (e.g., Euclidean, Mahalanobis) and multiple thresholds 
-			for extracting recurrence features from EEG signals, achieving 100\% classification accuracy. 
-			More specific, the \textit{transitivity} feature has shown capability of a highly discriminative biomarker, 
-			performing better compared to traditional linear methods. 
-
-			%epilepsy
-			Ngamga et al.\cite{ngamga2016} studied the performance achieved of RQA and Recurrence Network (RN) measures in identifying 
-			pre-seizure states from multi-day, multi-channel intracranial EEG (iEEG) 
-			recordings of epilepsy patients. 
-			Results highlighted the correlation among RQA measures (determinism, laminarity, and mean recurrence time) in 
-			detecting seizure precursors, while RN measures (average shortest path length and network transitivity) provided 
-			complementary but not so consistent insights than using the application of RQA measures alone.
-
 			%% modeling, RQA, ok
 			In addition there have been works where simulated data 
 			have been used in conjunction with RQA.
@@ -239,13 +253,7 @@
 			traditional order parameters by revealing localized synchronization patterns, 
 			such as the formation and growth of synchronized clusters.
 			
-			%ok, EEG, RQA, ASD
-			Heunis and co-authors\cite{heunis2018} have utilized resting state EEG and RQA in order to
-			distinguish individuals of ages 0-18 of two categories; ASD(autism spectrum disorder) and typically developing.
-			They have extracted RQA features and tested various linear and nonlinear classifiers achieving 92.9\% classification
-			accuracy with nonlinear SVM classifier.
-
-
+			
 
 		\begin{table}[h]
 		\centering

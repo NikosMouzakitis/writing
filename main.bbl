@@ -44,7 +44,7 @@ A differential biomarker based on recurrence quantification analysis of {EEG} si
 10.22034/jaism.2024.450400.1046
 
 \bibitem{ngamga2016}
-Ngamga, E. J., Bialonski, S., Marwan, N., Kurths, J., Geier, C., \& Lehnertz, K. (2016). Evaluation of selected recurrence measures in discriminating pre-ictal and inter-ictal periods from epileptic EEG data. \textit{Physics Letters A}, \textit{380}(16), 1419–1425. https://doi.org/10.1016/j.physleta.2016.02.024
+Ngamga, E. J., Bialonski, S., Marwan, N., Kurths, J., Geier, C. and Lehnertz, K. (2016). Evaluation of selected recurrence measures in discriminating pre-ictal and inter-ictal periods from epileptic EEG data. \textit{Physics Letters A}, \textit{380}(16), 1419–1425. https://doi.org/10.1016/j.physleta.2016.02.024
 
 \bibitem{fan2019detecting}
 Fan, M. and  Chou, C.-A. (2019). Detecting abnormal pattern of epileptic seizures via temporal synchronization of EEG signals. \textit{IEEE Transactions on Biomedical Engineering}, 66(3), 601-608. https://doi.org/10.1109/TBME.2018.2850959
@@ -94,6 +94,9 @@ Heunis, T., Aldrich, C., Peters, J. M., Jeste, S. S., Sahin, M., Scheffer, C., a
 ``Recurrence quantification analysis of resting state EEG signals in autism spectrum disorder -- a systematic methodological exploration of technical and demographic confounders in the search for biomarkers,''
 \emph{BMC Medicine}, vol. 16, no. 1, p. 101, 2018.
 
+
+\bibitem{eckmann1987}
+Eckmann, J.-P., Kamphorst, S. O. and Ruelle, D. (1987). Recurrence plots of dynamical systems. \textit{Europhysics Letters}, \textit{4}(9), 973--977.
 
 
 \end{thebibliography}
