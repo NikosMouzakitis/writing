@@ -23,7 +23,7 @@
 			studies in various conditions such as epilepsy, cognitive disorders and more 
 			as explored in this review.
 
-			%ok, eeg
+			%ok, eeg OK
 			Frolov et al.\cite{frolov} (2020) proposed an approach to analyze frequency based multiplex brain networks
 			using recurrence quantification analysis (RQA) 
 			on EEG data, where they have demonstrated how recurrence-based 
@@ -36,7 +36,7 @@
 			patterns during prolonged cognitive tasks. In addition the dataset
 			used in this research are openly available in a Figshare repository.
 
-			%ok.   eeg,Alzheimer
+			%ok.   eeg,Alzheimer OK
 			Núñez et al. \cite{nunez2020characterization} in their work, have analyzed
 			resting-state EEG recordings from subjects with mild cognitive impairment(MCI), 
 			Alzheimer's disease(AD), and healthy ground truth controls in order to detect 
@@ -53,7 +53,7 @@
 			Therefore, recurrence based dynamics show a capability as potential 
 			biomarkers for monitoring and detecting early Alzheimer's disease and its progression.
 
-			%epilepsy-ok eeg
+			%epilepsy-ok eeg   OK
 			Fan and Chou \cite{fan2019detecting} have also proposed 
 			an approach for real-time epileptic seizure detection
 			using as a method the analysis of temporal synchronization 
@@ -64,13 +64,13 @@
 			(6 seconds) for detecting seizure on the CHB-MIT dataset, 
 			performing better than other RQA measures.  
 
-			%ok, EEG, RQA, ASD
+			%ok, EEG, RQA, ASD    OK
 			Heunis and co-authors\cite{heunis2018} have utilized resting state EEG and RQA in order to
 			distinguish individuals of ages 0-18 of two categories; ASD(autism spectrum disorder) and typically developing.
 			They have extracted RQA features and tested various linear and nonlinear classifiers achieving 92.9\% classification
 			accuracy with nonlinear SVM classifier.
 
-			% EEG, aging aisthitiriako-kinitiko systima. ok.
+			% EEG, aging aisthitiriako-kinitiko systima. ok.  OK
 			Author in \cite{pitsik}(2025), investigated changes related to aging in 
 			brain sensorimotor systems using 
 			RQA and theta-band functional connectivity in EEG signals. 
@@ -84,7 +84,7 @@
 			age related biomarkers that were not detectable using 
 			standalone signal spectral analysis.
 
-			%cognitive, eeg OK.
+			%cognitive, eeg OK.    OK
 			Guglielmo et al. (2022)\cite{guglielmo}  
 			utilized RQA features extracted 
 			by EEG signals for the purpose of classification
@@ -100,14 +100,15 @@
 			showing the potential that RQA holds for 
 			generalizing on nonlinear dynamics.
 			
-			%% epilepsy, CRQA half-ok sEEG
-			Yang and co-authors \cite{yang2019dynamical}, employed stereo-electroencephalography (sEEG) 
-			recordings from 10 patients with refractory focal epilepsy to analyze dynamical differences 
-			among discreet epileptic states (inter-ictal, pre-ictal, and ictal) and regions. 
-			Using recurrence plots and CRQA, they have identified epileptogenic channels with longer diagonal
+			%% epilepsy, CRQA,RQA,sEEG   OK
+			Yang and co-authors \cite{yang2019dynamical}, examined stereo electroencephalography (sEEG) 
+			recordings of 10 patients with refractory focal epilepsy for analyzing dynamical differences 
+			among discreet epileptic phases/states (inter-ictal, pre-ictal, and ictal) and regions. 
+			Using recurrence plots and CRQA, they identified epileptogenic channels with longer diagonal
 			structures in RPs, which is a sign of more deterministic and recurrent dynamics. 
-			Their findings point out that synchronization between epileptogenic channels strengthened 
-			while seizures events occur, suggesting these regions dominate the epileptic network's dynamics.
+			Their findings point out that the synchronization among the epileptogenic channels strengthened 
+			while seizures events occur, suggesting that these regions dominate the 
+			network's dynamics.
 
 
 			%epilepsy, sEEG , RQA ok
@@ -138,19 +139,20 @@
 			linear methods on distinguishing seizure and pre-seizure states, 
 			identifying epileptic foci, and differentiating alongside eyes-open and eyes-closed conditions. 
 
-			%eeg-epilepsy
-			Recent studies have demonstrated the effectiveness of RQA in 
-			analyzing EEG signals for epilepsy detection. 
-			Gruszczyńska et al.\cite{gruszczynska2019} have applied RQA
-			in order to distinguish epileptic from healthy patients using EEG recordings 
+			%eeg-epilepsy   OK.
+			In another study which demonstrates the effectiveness of RQA in 
+			analyzing EEG signals for epilepsy detection,
+			Gruszczyńska et al.\cite{gruszczynska2019} applied RQA on such signals
+			in order to distinguish epileptic from healthy patients using recordings 
 			from frontal and temporal lobe electrodes (Fp1, Fp2, T3, T4). 
 			In their findings they have showed that the epileptic signals present more periodic
-			dynamics in comparison to healthy controls, by as evidenced by higher values of 
+			dynamics in comparison to healthy controls, by producing higher values of 
 			RQA parameters such as determinism,
-			laminarity, and longest diagonal line. The study combined RQA with
-			Principal Component Analysis for dimensionality reduction and visualization, achieving 86.8\% 
-			classification accuracy with SVM. This work is particularly relevant as it demonstrates RQA's capability
-			to identify pathological patterns in resting-state EEG without requiring seizure events during recording.
+			laminarity, and longest diagonal line. The combination of RQA with
+			Principal Component Analysis for dimensionality reduction and visualization, achieved 86.8\% 
+			classification accuracy with SVM. Authors also demonstrated RQA's capability
+			to identify pathological patterns in EEG signals without the 
+			requirement of seizure events during recording which have bad impact on the subject's health.
 
 			%sEEG
 			Another study utilizing advanced nonlinear analysis techniques for neural correlation investigation to
@@ -182,7 +184,7 @@
 
 %%%		fmri
 
-			% Alzheimer, fmri, ok
+			% Alzheimer, fmri, ok   OK
 			Researchers in \cite{rezaei},
 			have applied RQA on resting-state fMRI data from 
 			TgF344-AD rats(a transgenic rat model which will eventually develop Alzheimer’s disease)
@@ -200,7 +202,7 @@
 			in preclinical AD and the code used is also publicly available.
 
 
-			%schizophrenia, fmri, ok
+			%schizophrenia, fmri, ok  OK
 			Lombardi et al.\cite{Lombardi2014} have investigated the 
 			nonlinear properties in fMRI BOLD signals 
 			during a working memory task in 
@@ -215,7 +217,7 @@
 			While their work have focused on fMRI, the methodology can be adapted also into
 			EEG signals, which can offer a higher resolution for capturing rapid neural dynamics.
 
-			%ok. schizophrenia, fMRI
+			%ok. schizophrenia, fMRI  OK
 			Kang et al. (2023)\cite{kang}, in their study explore the dynamics and functional connectivity of the 
 			Default Mode Network (DMN) in schizophrenia, applying RQA-CRQA on resting-state fMRI data. 
 			Findings include decreased \textit{determinism} between specific DMN regions 
@@ -241,7 +243,7 @@
 			Notably, the dynamic connectivity measures showed stronger associations with cognitive 
 			performance than structural measures, particularly for verbal episodic memory. 
 
-			%% modeling, RQA, ok
+			%% modeling, RQA, ok   OK
 			In addition there have been works where simulated data 
 			have been used in conjunction with RQA.
 			Lameu et al.\cite{lameu2018}, investigated burst phase synchronization in neural networks using RQA. 
