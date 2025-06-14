@@ -53,6 +53,21 @@
 			Therefore, recurrence based dynamics show a capability as potential 
 			biomarkers for monitoring and detecting early Alzheimer's disease and its progression.
 
+			%% EEG, RQA-CRQA, MCI, OKAY.
+			MCI is also investigated by \cite{timothy2017classification}, where 
+			researchers focus on 
+			the classification of MCI using EEG signals and 
+			combining RQA and CRQA methods. Authors analyze both resting-state 
+			(eyes closed) and task-based (short-term memory) EEG data, 
+			focusing on complexity (via RQA) and synchronization (via CRQA) features. 
+			Their results indicate that MCI patients exhibit lower complexity
+			and higher inter- and intra-hemispheric synchronization compared to healthy controls, 
+			particularly during memory tasks. 
+			The study also proposes a novel feature space approach using RQA and CRQA measures, 
+			achieving high classification accuracy (91.7\%) under task conditions. 
+				
+
+
 			%epilepsy-ok eeg   OK
 			Fan and Chou \cite{fan2019detecting} have also proposed 
 			an approach for real-time epileptic seizure detection
@@ -154,6 +169,8 @@
 			to identify pathological patterns in EEG signals without the 
 			requirement of seizure events during recording which have bad impact on the subject's health.
 
+
+
 			%sEEG
 			Another study utilizing advanced nonlinear analysis techniques for neural correlation investigation to
 			cognitive functions \cite{mo} used \textit{stereoelectroencephalography (sEEG)} combined alongside RQA 
@@ -182,7 +199,7 @@
 
 
 
-%%%		fmri
+			%%%	studies with fmri
 
 			% Alzheimer, fmri, ok   OK
 			Researchers in \cite{rezaei},
@@ -254,8 +271,15 @@
 			(\textit{recurrence rate, laminarity inspired}(custom feature)\textit{, and average structure size}) complement 
 			traditional order parameters by revealing localized synchronization patterns, 
 			such as the formation and growth of synchronized clusters.
-			
-			
+			Kashyap and Keilholz\cite{kashyap2019} conducted a comprehensive comparison 
+			between simulated brain network models (BNMs) and real rs-fMRI data using 
+			dynamic analysis techniques, including Recurrence Quantification Analysis (RQA). 
+			In the study they employed two BNMs, the Kuramoto oscillator model and the Firing Rate model, for simulating
+			the whole-brain activity, which was then compared to human rs-fMRI data. 
+			Among the compared dynamic analysis methods, RQA was proved particularly effective 
+			in distinguishing between the models and empirical data, demonstrating that RQA metrics 
+			(\textit{recurrence rate, entropy, and average diagonal length}) could robustly separate the empirical data from simulations. 
+		   
 
 		\begin{table}[h]
 		\centering
@@ -285,6 +309,8 @@
 		17 & Yang et al. (2019) & sEEG & RQA,CRQA & epilepsy \\
 		18 & Rangaprakash (2014) & EEG & CPR(CRQA-based) & epilepsy \\
 		19 & Heunis et al. (2018) & rsEEG & RQA & autism spectrum disorder \\
+		20 & Timothy et al. (2017) & EEG & RQA-CRQA & MCI \\
+		21 & Kashyap et al. (2019) & fMRI & RQA & distinguish BNMs \\
 
 		\bottomrule
 		\end{tabular}

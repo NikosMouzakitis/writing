@@ -99,4 +99,11 @@ Heunis, T., Aldrich, C., Peters, J. M., Jeste, S. S., Sahin, M., Scheffer, C., a
 Eckmann, J.-P., Kamphorst, S. O. and Ruelle, D. (1987). Recurrence plots of dynamical systems. \textit{Europhysics Letters}, \textit{4}(9), 973--977.
 
 
+\bibitem{timothy2017classification}
+Timothy, L. T., Krishna, B. M. and Nair, U. (2017). Classification of mild cognitive impairment EEG using combined recurrence and cross recurrence quantification analysis. \textit{International Journal of Psychophysiology}, \textit{120}, 86–95. https://doi.org/10.1016/j.ijpsycho.2017.07.006
+
+
+\bibitem{Kashyap2019}
+	Kashyap, A. and Keilholz, S. (2019). Dynamic properties of simulated brain network models and empirical resting-state data. \textit{Network Neuroscience, 3}(2), 405-426. https://doi.org/10.1162/netn\_a\_00070
+
 \end{thebibliography}
