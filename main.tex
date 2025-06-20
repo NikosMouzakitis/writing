@@ -11,12 +11,15 @@
 	\section*{Bibliographical references}
 			%small intro and foundational works to have as introduction.test papers.
 			Recurrence Quantification Analysis (RQA) and Cross-Recurrence Quantification Analysis (CRQA) are
-			nonlinear methods for the analysis of nonstationary time series; such as EEG signals. 
-			The offer quantification of the recurring patterns in phase space trajectories \cite{trulla1996, webber2005}. 
+			nonlinear methods for the analysis of nonstationary time series. 
+			%such as EEG signals. 
+
+			The offer the quantification of the recurring patterns in phase space trajectories \cite{trulla1996, webber2005}. 
 			Introduced by Trulla et al.\cite{trulla1996} (directly built on quantifying recurrence plots\cite{eckmann1987}) 
 			and expanded by Webber and Zbilut\cite{webber2005}, RQA measures metrics 
 			like recurrence rate, determinism, and laminarity to capture dynamic system behavior. 
-			Thomasson et al.\cite{thomasson2002} in their work, demonstrated RQA’s applicability to EEG, highlighting its robustness to noise
+			Thomasson et al.\cite{thomasson2002} in their work, demonstrated RQA’s applicability on EEG data, mentioning 
+			the robustness it shows in accordance to noise
 			and nonstationarity. Marwan et al.\cite{marwan2013} further advanced recurrence plot techniques,
 			emphasizing on developing a confidence measure of RQA in detecting dynamic transitions.
 			Works like these, serve as a foundation of applying RQA and CRQA on EEG 
@@ -24,26 +27,26 @@
 			as explored in this review.
 
 			%ok, eeg OK
-			Frolov et al.\cite{frolov} (2020) proposed an approach to analyze frequency based multiplex brain networks
+			Frolov et al.\cite{frolov} proposed an approach to analyze frequency based multiplex brain networks
 			using recurrence quantification analysis (RQA) 
-			on EEG data, where they have demonstrated how recurrence-based 
+			on EEG data, and demonstrated the way that recurrence-based 
 			synchronization indices can effectively capture 
 			both within-frequency (intralayer) and cross-frequency (interlayer) 
 			functional connectivity during cognitive tasks. 
 			Their work showed that RQA is particularly suitable for analyzing 
 			non-stationary EEG signals and revealed
 			important insights about the evolution of functional connectivity 
-			patterns during prolonged cognitive tasks. In addition the dataset
+			patterns during cognitive tasks. In addition the dataset
 			used in this research are openly available in a Figshare repository.
 
 			%ok.   eeg,Alzheimer OK
-			Núñez et al. \cite{nunez2020characterization} in their work, have analyzed
+			Núñez et al. \cite{nunez2020characterization} worked with 
 			resting-state EEG recordings from subjects with mild cognitive impairment(MCI), 
 			Alzheimer's disease(AD), and healthy ground truth controls in order to detect 
 			frequency based changes into their brain dynamics. 
 			By blending wavelet based Kullback–Leibler divergence
 			(KLD) for capturing non-stationarity,
-			and two recurrence quantification analysis (RQA)
+			and two RQA
 			metrics(\textit{entropy of the recurrence point density}
 			and the \textit{median of the recurrence point density}) insights have been
 			extracted related to neurodegeneration presence.
@@ -54,10 +57,10 @@
 			biomarkers for monitoring and detecting early Alzheimer's disease and its progression.
 
 			%% EEG, RQA-CRQA, MCI, OKAY.
-			MCI is also investigated by \cite{timothy2017classification}, where 
-			researchers focus on 
+			MCI has also investigated by Timothy et al.\cite{timothy2017classification}, where 
+			researchers have focused on 
 			the classification of MCI using EEG signals and 
-			combining RQA and CRQA methods. Authors analyze both resting-state 
+			combining RQA and CRQA methods. Analysis has been performed on both resting-state 
 			(eyes closed) and task-based (short-term memory) EEG data, 
 			focusing on complexity (via RQA) and synchronization (via CRQA) features. 
 			Their results indicate that MCI patients exhibit lower complexity
@@ -73,7 +76,7 @@
 			an approach for real-time epileptic seizure detection
 			using as a method the analysis of temporal synchronization 
 			patterns of EEG signals with recurrence networks and spectral graph theory. 
-			Recurrence plots are used for the modeling of the EEG dynamics, 
+			Recurrence plots were used for the modeling of the EEG dynamics, 
 			extracting graph theory's features for quantifying the synchronization. 
 			Results showed high sensitivity of 98.48\% and low latency
 			(6 seconds) for detecting seizure on the CHB-MIT dataset, 
@@ -82,16 +85,16 @@
 			%ok, EEG, RQA, ASD    OK
 			Heunis and co-authors\cite{heunis2018} have utilized resting state EEG and RQA in order to
 			distinguish individuals of ages 0-18 of two categories; ASD(autism spectrum disorder) and typically developing.
-			They have extracted RQA features and tested various linear and nonlinear classifiers achieving 92.9\% classification
+			RQA features were extracted and tested on various linear and nonlinear classifiers achieving 92.9\% classification
 			accuracy with nonlinear SVM classifier.
 
 			% EEG, aging aisthitiriako-kinitiko systima. ok.  OK
-			Author in \cite{pitsik}(2025), investigated changes related to aging in 
+			Author in \cite{pitsik}, investigated changes related to aging in 
 			brain sensorimotor systems using 
 			RQA and theta-band functional connectivity in EEG signals. 
 			In the study a VR experimental paradigm was 
 			utilized with auditory stimulus across different age groups(young and elder subjects). 
-			Key findings revealed that elder subjects present 
+			Key findings include that elder subjects present 
 			decreased EEG complexity during motor preparation stages as 
 			measured by RQA metrics (\textit{$\Delta$RR and $\Delta$RTE}), 
 			and had increased theta band functional connectivity 
@@ -100,7 +103,7 @@
 			standalone signal spectral analysis.
 
 			%cognitive, eeg OK.    OK
-			Guglielmo et al. (2022)\cite{guglielmo}  
+			Guglielmo et al. \cite{guglielmo}  
 			utilized RQA features extracted 
 			by EEG signals for the purpose of classification
 			of cognitive performance during mental arithmetic tasks. 
@@ -109,7 +112,7 @@
 			six RQA metrics (\textit{recurrence rate, determinism, 
 			laminarity, entropy, maximum diagonal line length and average diagonal line length}) 
 			from four electrodes (F7, Pz, P4, Fp1). 
-			Afterwards they applied machine learning(ML) classifiers 
+			Afterwards by applying machine learning classifiers 
 			(SVM, Random Forest, and Gradient Boosting) and
 			they reached accuracy of classification above 0.85, 
 			showing the potential that RQA holds for 
@@ -127,7 +130,7 @@
 
 
 			%epilepsy, sEEG , RQA ok
-			Lopes et al. (2020)\cite{lopes} have proposed a 
+			Lopes et al. \cite{lopes} have proposed a 
 			combinatorial framework 
 			by mixing RQA with dynamic functional network (dFN) analysis,
 			applying it to both MEG and stereo EEG data. 
@@ -137,7 +140,7 @@
 			recurrence plot construction and finally RQA. 
 			The study demonstrated that functional networks in epilepsy 
 			patients recur more quickly than in healthy controls, suggesting RQA on
-			dFNs could serve as a potential biomarker.
+			dFNs could play the role of a potential biomarker.
 			For the EEG dataset investigation, they have showed that the pre-ictal 
 			networks shown higher recurrence rates 
 			than post-ictal periods, with the $\tau$-recurrence rate ($RR_{\tau}$) proving particularly 
@@ -220,7 +223,7 @@
 
 
 			%schizophrenia, fmri, ok  OK
-			Lombardi et al.\cite{Lombardi2014} have investigated the 
+			Lombardi et al.\cite{Lombardi2014} investigated the 
 			nonlinear properties in fMRI BOLD signals 
 			during a working memory task in 
 			schizophrenic patients and healthy controls. 
@@ -235,7 +238,7 @@
 			EEG signals, which can offer a higher resolution for capturing rapid neural dynamics.
 
 			%ok. schizophrenia, fMRI  OK
-			Kang et al. (2023)\cite{kang}, in their study explore the dynamics and functional connectivity of the 
+			Kang et al. \cite{kang}, in their study explore the dynamics and functional connectivity of the 
 			Default Mode Network (DMN) in schizophrenia, applying RQA-CRQA on resting-state fMRI data. 
 			Findings include decreased \textit{determinism} between specific DMN regions 
 			(vMPFC-posterios cingulate and vMPFC-precuneus) in first-episode schizophrenia patients, 
@@ -257,8 +260,8 @@
 			In this study they demonstrate the capability of CRQA to integrate multiple recurrence metrics 
 			for revealing both hyperconnectivity in parietal regions (angular gyrus and superior parietal lobule) 
 			and hypoconnectivity in medial temporal structures (hippocampus and amygdala). 
-			Notably, the dynamic connectivity measures showed stronger associations with cognitive 
-			performance than structural measures, particularly for verbal episodic memory. 
+		%	Notably, the dynamic connectivity measures showed stronger associations with cognitive 
+		%	performance than structural measures, particularly for verbal episodic memory. 
 
 			%% modeling, RQA, ok   OK
 			In addition there have been works where simulated data 
@@ -271,7 +274,7 @@
 			(\textit{recurrence rate, laminarity inspired}(custom feature)\textit{, and average structure size}) complement 
 			traditional order parameters by revealing localized synchronization patterns, 
 			such as the formation and growth of synchronized clusters.
-			Kashyap and Keilholz\cite{kashyap2019} conducted a comprehensive comparison 
+			Kashyap and Keilholz\cite{Kashyap2019} conducted a comprehensive comparison 
 			between simulated brain network models (BNMs) and real rs-fMRI data using 
 			dynamic analysis techniques, including Recurrence Quantification Analysis (RQA). 
 			In the study they employed two BNMs, the Kuramoto oscillator model and the Firing Rate model, for simulating
