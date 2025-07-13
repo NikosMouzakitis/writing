@@ -16,19 +16,19 @@
 		neuroscience applications, thus offering insights that traditional linear methods were unable to catch.
 
 		In epilepsy research, CRQA based approaches proposed new seizure detection biomarkers. 
-		The work of Rangaprakash, introduced the Correlation between Probabilities of Recurrence (CPR), 
+		The work of Rangaprakash\cite{rangaprakash2014} , introduced the Correlation between Probabilities of Recurrence (CPR), 
 		a novel CRQA-derived phase synchronization metric which achieved to outperform traditional linear coherence measures. 
 		CPR differentiates between interictal and preictal states while also could distinguish between eyes-open and eyes-closed 
 		conditions in epileptic patients. 
-		Building on this, Yang et al. , applied CRQA to stereoelectroencephalography (sEEG) recordings, 
+		Building on this, Yang et al.\cite{yang2019dynamical} , applied CRQA to stereoelectroencephalography (sEEG) recordings, 
 		revealing that epileptogenic channels present longer diagonal structures in their recurrence plots, 
 		indicating more deterministic and recurrent dynamics during pre-ictal periods. 
 		These findings, suggested that CRQA could identify pathological brain regions with greater 
 		accuracy than standalone spectral analysis.
 
-		For real-time seizure detection, Fan and Chou , have developed an new approach by blending recurrence plots with spectral graph theory. 
+		For real-time seizure detection, Fan and Chou\cite{fan2019detecting} , have developed an new approach by blending recurrence plots with spectral graph theory. 
 		Their method tested with the CHB-MIT dataset, achieved  98.48\% sensitivity and very low detection latency (6 seconds). 
-		Gruszczyńska et al. further demonstrated the clinical utility of RQA by showing that standard 
+		Gruszczyńska et al.\cite{gruszczynska2019} further demonstrated the clinical utility of RQA by showing that standard 
 		RQA metrics (determinism, laminarity, and longest diagonal line) are able to classify epileptic EEGs with 86.8\% 
 		accuracy even during interictal periods. 
 		This finding was particularly significant as it suggested that RQA could identify pathological patterns 
@@ -36,7 +36,7 @@
 
 		In the domain of cognitive decline and neurodegenerative disorders, 
 		CRQA/RQA methods also provided new biomarkers for early diagnosis or progression monitoring.
-		Timothy et al. conducted a comprehensive study combining RQA and CRQA to analyze both 
+		Timothy et al.\cite{timothy2017classification} conducted a comprehensive study combining RQA and CRQA to analyze both 
 		resting-state and memory-task EEG recordings in mild cognitive impairment (MCI). 
 		Findings of this work showed that MCI patients experienced lower complexity (quantified through RQA) 
 		and higher inter-hemispheric synchronization (measured via CRQA) compared to healthy controls, especially 
@@ -44,23 +44,44 @@
 		Integration of these features achieved 91.7\% classification accuracy, 
 		potentialy opening the way for novel clinical diagnostic applications.
 
-		Nunez et al. , extended these findings to Alzheimer's disease (AD), by employing a 
+		Nunez et al.\cite{nunez2020characterization}, extended these findings to Alzheimer's disease (AD), by employing a 
 		sophisticated approach by combined wavelet based analysis of nonstationarity 
 		with RQA metrics. Their results showed distinct recurrence patterns in theta 
 		and beta bands that differentiated AD patients from healthy controls. 
 		Notably, they found that entropy of recurrence point density and median recurrence point density served 
-		as particularly sensitive markers of neurodegeneration. Heunis et al. , applied similar methodology to study autism spectrum disorder (ASD), 
+		as particularly sensitive markers of neurodegeneration. Heunis et al.\cite{heunis2018}, applied similar methodology to study autism spectrum disorder (ASD), 
 		finding that RQA features extracted from resting-state EEG can distinguish ASD children 
 		from typically developing controls with 92.9\% accuracy using nonlinear SVM classifiers.
 
-		In cognitive neuroscience applications, CRQA/RQA has provided new insights into brain dynamics during task performance. Frolov et al. (2020) developed a multiplex network approach using CRQA to simultaneously analyze within-frequency and cross-frequency coupling in EEG during working memory tasks. Their method revealed previously undetectable patterns of dynamic connectivity modulation that correlated with task difficulty and performance. Guglielmo et al. (2022) focused on mental arithmetic tasks, extracting six key RQA metrics (including recurrence rate, determinism, and laminarity) from frontal-parietal electrodes. Their machine learning pipeline achieved over 85% accuracy in classifying cognitive performance levels, highlighting RQA's potential for real-time cognitive state monitoring.
+		In the domain of cognitive neuroscience, CRQA/RQA has also helped with insights into brain dynamics 
+		during task performance. Frolov et al.\cite{frolov}, developed a multiplex network approach using 
+		CRQA to simultaneously analyze within-frequency and cross-frequency coupling in 
+		EEG during working memory tasks. Their method highlighted previously undetectable 
+		patterns in dynamic connectivity modulation which correlated with task difficulty and performance. 
+		Guglielmo et al.\cite{guglielmo} focused on mental arithmetic tasks, 
+		extracting six key RQA metrics (including \textit{recurrence rate, determinism, and laminarity}) 
+		from frontal-parietal electrodes. By application of a machine learning pipeline afterwards, they reached over 85\% of accuracy 
+		in classifying cognitive performance levels, highlighting RQA's potential for real time 
+		cognitive state monitoring.
 
-		The collective findings from these studies demonstrate that CRQA and RQA offer several unique advantages for EEG analysis: (1) exceptional sensitivity to transient, nonstationary dynamics that are common in neural signals; (2) the ability to quantify both local complexity (through RQA) and inter-regional synchronization (through CRQA) within a unified framework; and (3) robustness to noise and artifacts that often plague EEG recordings. These characteristics make recurrence-based methods particularly valuable for clinical applications where reliable detection of subtle neural changes is critical for early diagnosis and intervention.
+		Summarizing the collective findings from these studies, demonstrate that CRQA and RQA offer unique advantages 
+		for EEG analysis: (1) exceptional sensitivity to transient, nonstationary dynamics that are common in neural signals; 
+		(2) the ability to quantify both local complexity (through RQA) and inter-regional synchronization (through CRQA) within a unified framework; 
+		and (3) robustness to noise and artifacts that often EEG recordings experience. Having the described characteristics, recurrence-based methods 
+		become valuable for clinical applications where reliable detection of 
+		subtle neural changes is critical for tasks as early diagnosis or a crucial intervention.
 
-		Recent methodological innovations continue to expand the potential applications of these techniques. For instance, the integration of CRQA with machine learning (as demonstrated by Guglielmo et al., 2022 and Palanisamy et al., 2024) has opened new possibilities for automated diagnosis and real-time monitoring systems. Furthermore, the development of network-based approaches (Frolov et al., 2020; Lopes et al., 2020) has extended recurrence analysis from single-channel characterization to comprehensive assessments of whole-brain dynamics.
+		Recent methodological innovations continue to expand the potential applications of these techniques. 
+		For instance, the integration of CRQA with machine learning (as demonstrated by \cite{guglielmo} and \cite{palanisamy2024}) 
+		has opened new possibilities for automated diagnosis and real time monitoring systems. On top of that, 
+		the development of network-based approaches (\cite{frolov}\cite{lopes}) 
+		has extended recurrence analysis from single-channel characterization to comprehensive assessments of whole-brain dynamics.
 
-		This body of work collectively establishes CRQA and RQA as essential tools in modern EEG analysis, with proven applications ranging from epilepsy monitoring to cognitive assessment and neurodegenerative disease diagnosis. The consistent success across diverse clinical and experimental paradigms suggests these methods will play an increasingly important role in both research and clinical practice as the field moves toward more sophisticated analyses of brain dynamics.
-
+		This body of work collectively establishes CRQA and RQA as essential tools in modern EEG analysis, 
+		with proven applications ranging from epilepsy monitoring to cognitive assessment and neurodegenerative 
+		disease diagnosis. The consistent success across diverse clinical and experimental paradigms suggests 
+		these methods will play an increasingly important role in both research and clinical practice as the field
+		moves toward more sophisticated analyses of brain dynamics.
 
 	\newpage
 

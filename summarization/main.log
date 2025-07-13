@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  12 JUL 2025 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  13 JUL 2025 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -88,83 +88,77 @@ tive dis-or-ders, CRQA/RQA
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./main.bbl [3]
-Underfull \hbox (badness 2376) in paragraph at lines 41--45
-\OT1/cmr/m/n/10 A dif-fer-en-tial biomarker based on re-cur-rence quan-tifi-ca-
-tion anal-y-sis
- []
-
-
-Underfull \hbox (badness 1389) in paragraph at lines 41--45
-\OT1/cmr/m/n/10 of EEG sig-nal and ge-netic al-go-rithm for epilepsy di-ag-no-s
-is.  \OT1/cmr/m/it/10 Jour-
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 41--45
-\OT1/cmr/m/it/10 nal of Ar-ti-fi-cial In-tel-li-gence and Sys-tem Mod-elling\OT
-1/cmr/m/n/10 , 2(2):74--85, 2024.
- []
-
-
-Underfull \hbox (badness 5817) in paragraph at lines 50--51
-[]\OT1/cmr/m/n/10 Fan, M. and Chou, C.-A. (2019). De-tect-ing ab-nor-mal pat-te
-rn
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\OT1/cmr/m/n/10 of epilep-tic seizures via tem-po-ral syn-chro-niza-tion of EEG
- sig-
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 50--51
-\OT1/cmr/m/n/10 nals. \OT1/cmr/m/it/10 IEEE Trans-ac-tions on Biomed-i-cal En-g
-i-neer-ing\OT1/cmr/m/n/10 , 66(3), 601-608.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 []\OT1/cmr/m/n/10 Rangaprakash, D. (2014). Con-nec-tiv-ity anal-y-sis of mul-ti
 -chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \OT1/cmr/m/n/10 nel EEG sig-nals us-ing re-cur-rence based phase syn-chro-niza-
 
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 65--66
+Underfull \hbox (badness 6825) in paragraph at lines 4--5
 \OT1/cmr/m/n/10 tion tech-nique. \OT1/cmr/m/it/10 Com-put-ers in Bi-ol-ogy and 
 Medicine, 46\OT1/cmr/m/n/10 , 11-21.
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 70--74
-\OT1/cmr/m/n/10 sients,'' \OT1/cmr/m/it/10 Physics Let-ters A\OT1/cmr/m/n/10 , 
-vol. 223, no. 4-5, pp. 255--260, 1996.
+Underfull \hbox (badness 2875) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/10 Fan, M. and Chou, C.-A. (2019). De-tect-ing ab-nor-mal pat-te
+rn of
  []
 
-[4]) [5] (./main.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\OT1/cmr/m/n/10 epilep-tic seizures via tem-po-ral syn-chro-niza-tion of EEG si
+g-nals.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 IEEE Trans-ac-tions on Biomed-i-cal En-gi-neer-ing\OT1/cmr/m/n
+/10 , 66(3), 601-608.
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 42--46
+\OT1/cmr/m/n/10 A dif-fer-en-tial biomarker based on re-cur-rence quan-tifi-ca-
+tion anal-y-sis
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 42--46
+\OT1/cmr/m/n/10 of EEG sig-nal and ge-netic al-go-rithm for epilepsy di-ag-no-s
+is.  \OT1/cmr/m/it/10 Jour-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 42--46
+\OT1/cmr/m/it/10 nal of Ar-ti-fi-cial In-tel-li-gence and Sys-tem Mod-elling\OT
+1/cmr/m/n/10 , 2(2):74--85, 2024.
+ []
+
+[3]) [4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 545 strings out of 481239
- 8524 string characters out of 5920378
+ 541 strings out of 481239
+ 8476 string characters out of 5920378
  241956 words of memory out of 5000000
- 15877 multiletter control sequences out of 15000+600000
- 533457 words of font info for 28 fonts, out of 8000000 for 9000
+ 15874 multiletter control sequences out of 15000+600000
+ 533289 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 25i,4n,20p,812b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,4n,20p,355b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (5 pages, 84110 bytes).
+pfb>
+Output written on main.pdf (4 pages, 65761 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 29 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
