@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  13 JUL 2025 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  14 JUL 2025 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -80,15 +80,10 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
+ [1
 
-Overfull \hbox (16.55617pt too wide) in paragraph at lines 37--46
-[]\OT1/cmr/m/n/10 In the do-main of cog-ni-tive de-cline and neu-rode-gen-er-a-
-tive dis-or-ders, CRQA/RQA
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./main.bbl
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+(./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 []\OT1/cmr/m/n/10 Rangaprakash, D. (2014). Con-nec-tiv-ity anal-y-sis of mul-ti
 -chan-
@@ -144,10 +139,10 @@ Underfull \hbox (badness 1009) in paragraph at lines 42--46
 
 [3]) [4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 541 strings out of 481239
- 8476 string characters out of 5920378
+ 525 strings out of 481239
+ 8300 string characters out of 5920378
  241956 words of memory out of 5000000
- 15874 multiletter control sequences out of 15000+600000
+ 15858 multiletter control sequences out of 15000+600000
  533289 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  25i,4n,20p,355b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -155,7 +150,7 @@ Here is how much of TeX's memory you used:
 ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb>
-Output written on main.pdf (4 pages, 65761 bytes).
+Output written on main.pdf (4 pages, 65055 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

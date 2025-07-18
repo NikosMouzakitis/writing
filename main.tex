@@ -283,6 +283,20 @@
 			in distinguishing between the models and empirical data, demonstrating that RQA metrics 
 			(\textit{recurrence rate, entropy, and average diagonal length}) could robustly separate the empirical data from simulations. 
 		   
+			
+			Shalbaf et al. \cite{shalbaf2014frontal} investigated the synchronization of EEG signals 
+			between frontal and temporal regions during propofol anesthesia 
+			using \textit{Order Patterns Cross Recurrence Analysis} (OPCR). 
+			Their study introduced a novel index, \textit{Order Pattern Laminarity} (OPL), for the quantification of
+			neuronal synchronization and compared its performance with the traditional Bispectral Index (BIS). 
+			The results demonstrated that OPL correlated more strongly with propofol concentration 
+			($P_k = 0.9$) and exhibited faster response times to transient changes in consciousness 
+			compared to BIS. Additionally, OPL showed lower variability at the point of loss of 
+			consciousness (LOC), suggesting its robustness as a measure of anesthetic depth. 
+			This work highlights the potential of recurrence-based methods (e.g., CRQA) 
+			for analyzing brain network dynamics under anesthesia, 
+			particularly in noisy, non-stationary EEG data.
+
 
 		\begin{table}[h]
 		\centering
@@ -314,6 +328,7 @@
 		19 & Heunis et al. (2018) & rsEEG & RQA & autism spectrum disorder \\
 		20 & Timothy et al. (2017) & EEG & RQA-CRQA & MCI \\
 		21 & Kashyap et al. (2019) & fMRI & RQA & distinguish BNMs \\
+		22 & Shalbaf et al. (2014) & EEG & CRQA(OPL) &  Anesthesia depth monitoring\\
 
 		\bottomrule
 		\end{tabular}
