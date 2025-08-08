@@ -298,6 +298,14 @@
 			particularly in noisy, non-stationary EEG data.
 
 
+
+
+
+
+			
+
+
+
 		\begin{table}[h]
 		\centering
 		\caption{Comparison among the retrieved studies using recurrence analysis}
@@ -333,6 +341,32 @@
 		\bottomrule
 		\end{tabular}
 		\end{table}
+
+		\section{Filtering}
+
+			Electroencephalogram (EEG) signals in most cases are contaminated by noise 
+			and artifacts from physiological (eye blinks, muscle or cardiac activity) 
+			and non-physiological sources (powerline interference). 
+			Artifacts consist of non-neural signals that contaminate the recorded EEG data. 
+			
+			Preprocessing is required in order to increase the quality of the signal(signal-to-noise)
+			for boosting further analysis in various application domains like brain-computer interfaces (BCIs) 
+			or clinical diagnostics \cite{dhanaseivam2023}\cite{jiang2019}\cite{sen2023}\cite{removeArtifactsReview}.
+			
+			Common preprocessing techniques include:  
+			\begin{itemize}  
+			    \item \textbf{Filtering} (e.g., Butterworth, Chebyshev) to remove unwanted frequency bands.  
+			    \item \textbf{Regression methods} for correcting ocular artifacts using reference channels.  
+			    \item \textbf{Blind Source Separation (BSS)} (e.g., ICA, CCA) to decompose and isolate neural activity from artifacts.  
+			    \item \textbf{Wavelet/EMD-based methods} for non-stationary artifact removal.  
+			\end{itemize}  
+			
+			Also hybrid approaches (e.g., wavelet-ICA) combine multiple techniques for improved artifact rejection. 
+			The choice of method depends on computational constraints, artifact type, 
+			and real-time processing needs. 
+			Effective preprocessing ensures reliable feature extraction and downstream analysis.  
+
+						
 
 
 
