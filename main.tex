@@ -372,6 +372,53 @@
 
 						
 
+			\subsection{Evaluation metrics for EEG denoising in the CHB-MIT dataset}
+
+			In order to evaluate the performance of 
+			different wavelet-based filters for EEG denoising, 
+			quantitative metrics have been computed over entire recordings 
+			per channel and filter configuration. 
+			Metrics used were:
+
+			\begin{itemize}
+			    \item \textbf{Signal-to-Noise Ratio (SNR, dB)}: Measures the ratio between the power of the clean 
+				    signal and the power of the noise. Higher values indicate better noise suppression 
+				    while preserving the structure of the signal.
+			    \item \textbf{Root Mean Square Error (RMSE, $\mu$V)}: This metric quantifies 
+				    the average deviation between the denoised and reference signals in microvolts. 
+					Lower values indicate closer similarity to the original signal.
+			    \item \textbf{Normalized RMSE (NRMSE, \%)}: RMSE normalized by the dynamic range of the 
+				    reference signal, expressed as a percentage. 
+					Lower values represent better performance.
+			    \item \textbf{Correlation Coefficient}: Pearson's correlation between the denoised and 
+				    reference signals, assessing how similar the two compared waveforms are.
+					Values close to $1$ indicate high waveform preservation.
+			    \item \textbf{Percent Root-mean-square Difference (PRD, \%)}: Measures the relative distortion 
+				    introduced by the denoising process. 
+					Lower values indicate less distortion.
+			\end{itemize}
+
+			For each one of the filters configuration, metrics were computed 
+			channel-wise and then averaged across all channels in order to
+			calculate their global performance score. 
+
+			\subsection{Filter Selection Criteria}
+
+			The selection of the optimal filter was based on a multi-criteria ranking strategy, where:
+			\begin{enumerate}
+			    \item Metrics where \textit{higher} values indicate better performance (\textbf{SNR}, \textbf{Correlation}) were ranked in descending order.
+			    \item Metrics where \textit{lower} values indicate better performance (\textbf{RMSE}, \textbf{NRMSE}, \textbf{PRD}) were ranked in ascending order.
+			    \item The ranks from all metrics were averaged to obtain an overall performance rank for each filter.
+			\end{enumerate}
+
+			The filter with the lowest average rank was considered the best compromise between noise reduction and signal fidelity. According to this evaluation, the \textbf{DB4, Level 2, Threshold 0.5, Hard Thresholding} filter achieved the highest overall performance, exhibiting:
+			\begin{itemize}
+			    \item One of the highest SNR values,
+			    \item Lowest RMSE and NRMSE values,
+			    \item Highest correlation coefficient,
+			    \item Lowest PRD.
+			\end{itemize}
+			This indicates that the chosen filter effectively suppressed noise while preserving the morphological features of the EEG signal, making it the most suitable choice for subsequent analysis.
 
 
 

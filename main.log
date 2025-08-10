@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  10 AUG 2025 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.3.1)  11 AUG 2025 02:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,7 +101,14 @@ Overfull \hbox (111.54247pt too wide) in paragraph at lines 313--343
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5] [6] (./main.bbl [7]
+[5] [6]
+Overfull \hbox (6.81506pt too wide) in paragraph at lines 410--411
+[]\OT1/cmr/m/n/10 Metrics where \OT1/cmr/m/it/10 lower \OT1/cmr/m/n/10 val-ues 
+in-di-cate bet-ter per-for-mance (\OT1/cmr/bx/n/10 RMSE\OT1/cmr/m/n/10 , \OT1/c
+mr/bx/n/10 NRMSE\OT1/cmr/m/n/10 ,
+ []
+
+[7] (./main.bbl [8]
 Underfull \hbox (badness 2376) in paragraph at lines 41--45
 \OT1/cmr/m/n/10 A dif-fer-en-tial biomarker based on re-cur-rence quan-tifi-ca-
 tion anal-y-sis
@@ -161,28 +168,28 @@ Underfull \hbox (badness 2608) in paragraph at lines 70--74
 vol. 223, no. 4-5, pp. 255--260, 1996.
  []
 
-[8] [9]) [10] (./main.aux) ) 
+[9] [10]) [11] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 558 strings out of 481239
- 8705 string characters out of 5920378
+ 560 strings out of 481239
+ 8734 string characters out of 5920378
  247956 words of memory out of 5000000
- 15888 multiletter control sequences out of 15000+600000
- 534100 words of font info for 30 fonts, out of 8000000 for 9000
+ 15890 multiletter control sequences out of 15000+600000
+ 534705 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  25i,8n,20p,483b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super
--ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm1000.pfb>
-Output written on main.pdf (10 pages, 132191 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-supe
+r-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1000.pfb>
+Output written on main.pdf (11 pages, 141827 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
