@@ -5,9 +5,9 @@ import mne
 from scipy.stats import median_abs_deviation
 from scipy.signal import welch
 
-NUM_CHAN = 5 
-PLOT_START = 30  # Start time in seconds
-PLOT_END = 40
+NUM_CHAN = 6
+PLOT_START = 40  # Start time in seconds
+PLOT_END = 44
 # End time in seconds
 
 def load_eeg_data(edf_path, num_channels=NUM_CHAN, l_freq=0.5, h_freq=60.0):
@@ -19,7 +19,7 @@ def load_eeg_data(edf_path, num_channels=NUM_CHAN, l_freq=0.5, h_freq=60.0):
 
 
         #application of a bandpass filter
-        #raw.filter(l_freq=l_freq, h_freq=h_freq, method='iir', iir_params=dict(order=4, ftype='butter'), phase='zero', verbose=True)
+        raw.filter(l_freq=l_freq, h_freq=h_freq, method='iir', iir_params=dict(order=4, ftype='butter'), phase='zero', verbose=True)
         channels = raw.ch_names
         print(f"Applied bandpass filter ({l_freq}–{h_freq} Hz)")
         return raw, channels, sfreq
@@ -61,35 +61,43 @@ def bandpass_filter(signal, sfreq, l_freq=1.0, h_freq=60.0):
         print(f"Error in bandpass filtering: {e}")
         return signal
 
-def calculate_diff_snr(raw_signal, denoised_signal, fs, band=(1, 60)):
-    """Calculate Diff SNR"""
+def calculate_residual_snr(raw_signal, denoised_signal):
+    """Calculate SNR using residual method: filtered as signal, (raw-filtered) as noise."""
     try:
-        f, Pxx_raw = welch(raw_signal, fs, nperseg=512)
-        f, Pxx_diff = welch(raw_signal - denoised_signal, fs, nperseg=512)
-        in_band = (f >= band[0]) & (f <= band[1])
-        signal_power = np.trapz(Pxx_raw[in_band], f[in_band])
-        noise_power = np.trapz(Pxx_diff[in_band], f[in_band])
-        print(f"Difference SNR - Signal Power ({band[0]}–{band[1]} Hz): {signal_power:.2e}, Noise Power (Diff): {noise_power:.2e}")
-        return 10 * np.log10(signal_power / (noise_power + 1e-12))
+        residual = raw_signal - denoised_signal
+        signal_power = np.mean(denoised_signal ** 2)
+        noise_power = np.mean(residual ** 2)
+        snr_db = 10 * np.log10(signal_power / (noise_power + 1e-12))
+        return snr_db
     except Exception as e:
-        print(f"Error in difference SNR calculation: {e}")
+        print(f"Error in residual SNR calculation: {e}")
         return np.nan
-
+        
 def plot_eeg_signals(raw, channels, sfreq, plot_start=PLOT_START, plot_end=PLOT_END):
     """Evaluate filters with Diff SNR and generate plots"""
     try:
         # Load full data (all time points)
-        print("print channels")
-        print(channels)
         full_data = raw.get_data(picks=channels)
         start_sample = int(plot_start * sfreq)
         stop_sample = int(plot_end * sfreq)
         times = np.arange(start_sample, stop_sample) / sfreq + plot_start
 
         filters = [
-            ('sym4 Wavelet + Bandpass', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=3, threshold_scale=9, mode='soft'), sfreq, l_freq=1.0, h_freq=60.0)),
-#            ('db8 Wavelet + Bandpass', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db8', level=7, threshold_scale=3.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
-#            ('FIR Bandpass', lambda x: fir_denoise(x, sfreq, l_freq=0.5, h_freq=30.0))
+                ('DB4 Wavelet LVL: 2 thresh: 1', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=2, threshold_scale=1.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 2 thresh: 2', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=2, threshold_scale=2.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 2 thresh: 3', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=2, threshold_scale=3.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 2 thresh: 4', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=2, threshold_scale=4.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+
+                ('DB4 Wavelet LVL: 3 thresh: 1', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=3, threshold_scale=1.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 3 thresh: 2', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=3, threshold_scale=2.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 3 thresh: 3', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=3, threshold_scale=3.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 3 thresh: 4', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=3, threshold_scale=4.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+
+                ('DB4 Wavelet LVL: 4 thresh: 1', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=4, threshold_scale=1.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 4 thresh: 2', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=4, threshold_scale=2.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 4 thresh: 3', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=4, threshold_scale=3.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+                ('DB4 Wavelet LVL: 4 thresh: 4', lambda x: bandpass_filter(wavelet_denoise(x, wavelet='db4', level=4, threshold_scale=4.0, mode='hard'), sfreq, l_freq=1.0, h_freq=60.0)),
+
         ]
         diff_snrs = {filt_name: [] for filt_name, _ in filters}
         filtered_full_data = {filt_name: np.zeros_like(full_data) for filt_name, _ in filters}
@@ -104,11 +112,11 @@ def plot_eeg_signals(raw, channels, sfreq, plot_start=PLOT_START, plot_end=PLOT_
             filtered_data = filtered_full_data[filt_name][:, start_sample:stop_sample]
             
             for i in range(len(channels)):
-                snr_diff = calculate_diff_snr(full_data[i, start_sample:stop_sample], filtered_data[i], sfreq, band=(4, 20))
-                diff_snrs[filt_name].append(snr_diff)
-                print(f"Channel {channels[i]} - Difference SNR: {snr_diff:.1f} dB")
+                snr_residual = calculate_residual_snr(full_data[i, start_sample:stop_sample], filtered_data[i])
+                diff_snrs[filt_name].append(snr_residual)
+                print(f"Channel {channels[i]} - Residual SNR: {snr_residual:.1f} dB")
             
-            # NUM_CHANx1 subplot
+            # 4x1 subplot
             plt.figure(figsize=(12, 8))
             plt.suptitle(f'EEG Signals: Bandpass-Filtered vs {filt_name} ({plot_start}s–{plot_end}s)', y=1.02)
             
@@ -132,7 +140,7 @@ def plot_eeg_signals(raw, channels, sfreq, plot_start=PLOT_START, plot_end=PLOT_
             
             plt.tight_layout()
             plt.show()
-            
+            ''' 
             # PSD plots
             for ch_idx, ch_name in enumerate(channels):
                 f, Pxx_raw = welch(full_data[ch_idx, start_sample:stop_sample], sfreq, nperseg=512)
@@ -148,23 +156,13 @@ def plot_eeg_signals(raw, channels, sfreq, plot_start=PLOT_START, plot_end=PLOT_
                 plt.axvline(x=60, color='k', linestyle='--', label='60 Hz Cutoff')
                 plt.legend()
                 plt.show()
-        
-        # Diff SNR table
-        print(f"\nDifference SNR Performance ({plot_start}s–{plot_end}s):")
-        print("-" * 70)
-        print("{:<10} {:<20} {:<20} {:<15}".format("Channel", "sym4 Wavelet + BP", "db8 Wavelet + BP", "FIR Bandpass"))
-        print("-" * 70)
-        for ch_idx, ch_name in enumerate(channels):
-            print("{:<10} {:<20.1f} {:<20.1f} {:<15.1f}".format(
-                ch_name, diff_snrs['sym4 Wavelet + Bandpass'][ch_idx], 
-                diff_snrs['db8 Wavelet + Bandpass'][ch_idx], diff_snrs['FIR Bandpass'][ch_idx]))
-
+            '''
     except Exception as e:
         print(f"Error in processing and plotting: {e}")
 
 if __name__ == "__main__":
     EDF_PATH = "/home/nicko/implementations/THESIS/main-thesis-folder/physionet.org/files/chbmit/1.0.0/chb02/chb02_16.edf"
-    raw, channels, sfreq = load_eeg_data(EDF_PATH, l_freq=0.5, h_freq=50.0)
+    raw, channels, sfreq = load_eeg_data(EDF_PATH, l_freq=0.5, h_freq=60.0)
     if raw is not None:
         plot_eeg_signals(raw, channels, sfreq, plot_start=PLOT_START, plot_end=PLOT_END)
     else:
